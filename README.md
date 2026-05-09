@@ -41,5 +41,14 @@ Optional External LED
 GND  ----------> LED Cathode
 ```
 <img width="874" height="532" alt="image" src="https://github.com/user-attachments/assets/016d1744-1072-475d-8211-098093124f58" />
-<img width="395" height="501" alt="image" src="https://github.com/user-attachments/assets/d6258eb4-6e67-4813-a5f9-c3e10f27aa97" />
+<img width="395" height="501" alt="image" src="https://github.com/user-attachments/assets/d6258eb4-6e67-4813-a5f9-c3e10f27aa97" /> <img width="1078" height="843" alt="image" src="https://github.com/user-attachments/assets/7643e3ad-5125-48dd-8c39-51f3ec661e5a" />
+(above - from bottom, first rail (-) is GND   2nd (+) is shared clock/GPIO2; third row up connect Mic data (SD)/GPIO9, and Spkr data (DIN)/GPIO25
+ above the ESP from left is GND, 5V, GPIO3, GPIO2, and 3V3; top rail is to share GPIO3 to LRC on the Max and WS on the Mic
+ I used a 2K resistor to the blue LED.
+ below - the mic is really good & has great sensitivity and low noise)
+ <img width="191" height="514" alt="image" src="https://github.com/user-attachments/assets/1dce4366-2dc7-413d-ba61-4152b70b9b29" />
+
+ 
+ 
+
 
