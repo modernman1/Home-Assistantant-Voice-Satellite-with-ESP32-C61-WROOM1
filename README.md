@@ -45,8 +45,16 @@ GND  ----------> LED Cathode
 (above - from bottom, first rail (-) is GND   2nd (+) is shared clock/GPIO2; third row up connect Mic data (SD)/GPIO9, and Spkr data (DIN)/GPIO25
  above the ESP from left is GND, 5V, GPIO3, GPIO2, and 3V3; top rail is to share GPIO3 to LRC on the Max and WS on the Mic
  I used a 2K resistor to the blue LED.
- below - the mic is really good & has great sensitivity and low noise)
+ below - the mic is really good & has great sensitivity and low noise)<br>
  <img width="191" height="514" alt="image" src="https://github.com/user-attachments/assets/1dce4366-2dc7-413d-ba61-4152b70b9b29" />
+
+ <b>NOTE:</b>
+ Initialization of a new board <i>could not be completed using either ESPHome Builder or web.esphome.io</i> - There is (timing?) issue preventing connection/handshake. 
+ To get the device setup, I had to build the firmware using the Manual option and save the .bin file to disk, then flash using python with:
+ ```
+ py -3 -m esptool --port [COM##] --baud 460800 --chip esp32c61 write-flash 0x0 [c:\filefolder\devicename.factory.bin]
+ ```
+ After flashing manually, subsequent flash can be done wirelessly (and still unable to use USB for logs or flashing).
 
  
  
