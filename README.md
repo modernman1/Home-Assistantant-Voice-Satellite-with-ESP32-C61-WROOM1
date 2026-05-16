@@ -13,6 +13,7 @@ INMP441 Omnidirectional I2S Microphone Module MEMS, high precision, low power, s
 MAX98357 I2S Audio Amplifier Module, Class D (Amazon ASIN B096ZM9LL5 or equivalent)
 
 4 Ohm 3 Watt Mini Speaker (Amazon ASIN B0BTP67F81 or equivalent; 8 ohm will also work, lower peak volume)
+ (or, for better sound with appropriate enclosure, something like Amazon ASIN B01LN8ONG4 or B0FN79ZFS2)
 
 Optional: LED and 1K resistor (or for brighter, 330ohm resistor)
 
@@ -55,6 +56,19 @@ GND  ----------> LED Cathode
  py -3 -m esptool --port [COM##] --baud 460800 --chip esp32c61 write-flash 0x0 [c:\filefolder\devicename.factory.bin]
  ```
  After flashing manually, subsequent flash can be done wirelessly (and still unable to use USB for logs or flashing).
+
+ ================================================================================== <br>
+ I decided to try to improve sound with Amazon ASIN B01LN8ONG4 speaker which needs to be mounted in a speaker enclosure. 
+ I did not do all the calculations for proper size and placement for best sound, and I did not want to spend any money, so I started looking & decided I'm never going to need the original box I've kept for all these years from a Google Nexus 6 phone --
+ drilled a 1" hole for the speaker and a 1/2" 'port' hole which for the momemt I've also used to make the external LED visible, and another 1/2" hole at the top for the mic module, and a cutout to get USB power inside.
+ I used popsicle sticks to hold the speaker and breadboard in place. Not final, but it sounds pretty good. (Pics below)  I did same thing with an old OnePlus Phone box which is taller and slimmer, and sounds even better.
+ 
+<img width="400" height="583" alt="sunspkr0" src="https://github.com/user-attachments/assets/ed362362-ec65-40c1-a938-bec5b61b3d68" />
+<img width="300" height="401" alt="sunspkr1" src="https://github.com/user-attachments/assets/bfce2901-cc3e-4d17-8b55-3c31df1f8d20" />
+<img width="500" height="310" alt="sunspkr2" src="https://github.com/user-attachments/assets/da80d480-9705-4936-aa8e-a651fbdb11f8" />
+
+
+ 
 
  
  
